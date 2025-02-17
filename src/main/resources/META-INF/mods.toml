@@ -31,7 +31,7 @@ versionRange = "[1.2.3,)"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.${mod_id}]]
+[[dependencies.{mod_id}]]
 modId = "brewinandchewin"
 mandatory = true
 versionRange = "[1.2.3,)"
