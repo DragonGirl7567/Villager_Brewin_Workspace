@@ -1,6 +1,7 @@
 package net.dragon_girl7567.villagerbrewin;
 
 import com.mojang.logging.LogUtils;
+import net.dragon_girl7567.villagerbrewin.villager.ModVillagers;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.server.ServerStartingEvent;
@@ -12,6 +13,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
+
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(VillagerBrewin.MOD_ID)
 public class VillagerBrewin {
@@ -22,6 +24,8 @@ public class VillagerBrewin {
 
     public VillagerBrewin() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModVillagers.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

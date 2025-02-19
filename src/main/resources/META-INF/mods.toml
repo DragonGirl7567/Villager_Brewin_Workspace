@@ -1,37 +1,41 @@
 modLoader="javafml" #mandatory
 loaderVersion="${loader_version_range}"
+
 license="${mod_license}"
+issueTrackerURL="https://github.com/MinecraftForge/MinecraftForge/issues"
+showAsResourcePack=false
 
 [[mods]] #mandatory
-modId="${mod_id}" #mandatory
-version="${mod_version}" #mandatory
-displayName="${mod_name}" #mandatory
-authors="${mod_authors}" #optional
-description='''${mod_description}'''
+modId="villagerbrewin" #mandatory
+version="1.0.0" #mandatory
+displayName="Villagers are a Brewin'" #mandatory
+authors="Dragon_Girl7567" #optional
+description="This is a addon to Brewin' And Chewin' which adds villager professions."
 
 
-[[dependencies.]] #optional
-    modId="forge" #mandatory
-    mandatory=true #mandatory
-    versionRange="${forge_version_range}" #mandatory
-    ordering="NONE"
-    side="BOTH"
+[[dependencies.villagerbrewin]] #optional
+modId="forge" #mandatory
+mandatory=true #mandatory
+versionRange="${forge_version_range}" #mandatory
+ordering="NONE"
+side="BOTH"
 
-[[dependencies.${mod_id}]]
-    modId="minecraft"
-    mandatory=true
-    versionRange="${minecraft_version_range}"
-    ordering="NONE"
-    side="BOTH"
+[[dependencies.villagerbrewin]] #optional
+modId="minecraft"
+mandatory=true
+versionRange="${minecraft_version_range}"
+ordering="NONE"
+side="BOTH"
 
-[[dependencies.${mod_id}]]
+[[dependencies.villagerbrewin]] #optional
 modId = "farmersdelight"
 mandatory = true
 versionRange = "[1.2.3,)"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.{mod_id}]]
+
+[[dependencies.villagerbrewin]] #optional
 modId = "brewinandchewin"
 mandatory = true
 versionRange = "[1.2.3,)"
