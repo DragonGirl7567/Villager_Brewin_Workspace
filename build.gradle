@@ -140,6 +140,12 @@ dependencies {
 
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
 
+// Required mods
+
+    implementation fg.deobf("curse.maven:brewin-and-chewin-637808:6122270")
+
+    implementation fg.deobf("curse.maven:farmers-delight-398521:5878214")
+
     // Required mods
 
     // Example mod dependency with JEI - using fg.deobf() ensures the dependency is remapped to your development mappings
