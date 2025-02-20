@@ -1,7 +1,6 @@
-package net.dragon_girl7567.villagerbrewin.datagen.loot;
+package net.dragon_girl7567.villagerbrewin.datagen;
 
 import net.dragon_girl7567.villagerbrewin.VillagerBrewin;
-import net.dragon_girl7567.villagerbrewin.datagen.ModPoiTypeTagsProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
@@ -22,6 +21,5 @@ public class DataGenerators {
         CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
 
         generator.addProvider(event.includeServer(), new ModPoiTypeTagsProvider(packOutput, lookupProvider, existingFileHelper));
-
     }
 }

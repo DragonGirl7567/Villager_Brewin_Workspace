@@ -17,7 +17,7 @@ public class ModVillagers {
     public static final DeferredRegister<VillagerProfession> VILLAGER_PROFESSIONS =
             DeferredRegister.create(ForgeRegistries.VILLAGER_PROFESSIONS, VillagerBrewin.MOD_ID);
 
-    public static final RegistryObject<PoiType> SOUND_POI = POI_TYPES.register("sound_poi",
+    public static final RegistryObject<PoiType> SOUND_POI = POI_TYPES.register("brewer_poi",
             () -> new PoiType(ImmutableSet.copyOf(BnCBlocks.KEG.get().getStateDefinition().getPossibleStates()),
                     1, 1));
 
